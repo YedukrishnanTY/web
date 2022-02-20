@@ -93,13 +93,11 @@ a:hover{
     width:30px;
     margin-right: 0.94rem;
 }
-.spotify-container{
-    margin-top:1.5rem;
-    align-items: center;
-}
-
 .playlist{
     display:flex;justify-content:center;background:linear-gradient(132deg,#697be0 0%,#16a03f 100%);padding:.7em;border-radius:.4rem;text-shadow:2px 3px 12px #000
+}
+.spotify-container{
+    margin-top:1.5rem;
 }
 .footer{
 display: flex;
@@ -149,5 +147,13 @@ margin-top: 3rem;
     width: 35px;
 }
 
-
+.spotify-container{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.spotify{
+    width: 40%;
+}
 }
