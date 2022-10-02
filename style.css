@@ -150,10 +150,19 @@ margin-top: 3rem;
 .spotify-container{
     margin-top: 1.5rem;
     display: flex;
+    border-radius:12px;
+    justify-content: center;
+    
+}
+.spotify-container1{
+    margin-top: 1.5rem;
+    border-radius:12px;
+    display: flex;
     justify-content: center;
     
 }
 .spotify{
     width: 40%;
 }
+
 }
