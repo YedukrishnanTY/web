@@ -6,15 +6,12 @@
     }
 
     body{
-        height: 100%;
-        
-        color: rgb(255, 255, 255);
-        margin: 0;
-        font-family: 'PT Sans', sans-serif;
-
-        background-color: #000000;
-
-    }
+            height: 100%;
+            color: rgb(255, 255, 255);
+            margin: 0;
+            font-family: 'PT Sans', sans-serif;
+            background-color: #000000;
+        }
           #stars {
             width: 1px;
             height: 1px;
@@ -78,7 +75,7 @@
             }
           }
     
-
+        
     /* a{
         text-decoration: none;
         color:aliceblue;
