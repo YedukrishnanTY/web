@@ -232,6 +232,13 @@
         justify-content: center;
         
     }
+    .spotify-container2{
+        margin-top: 1.5rem;
+        border-radius:12px;
+        display: flex;
+        justify-content: center;
+        
+    }
     .spotify{
         width: 40%;
     }
