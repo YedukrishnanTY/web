@@ -1,89 +1,93 @@
+ul {
+  position: relative;
+  display: flex;
+}
 
-  
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a .fa-brands {
+  font-size: 3em;
+  color: #222;
+}
+
+ul li a::before {
+  font-family: "FontAwesome";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3em;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:nth-child(7) a::before {
+  content: "\f09b"; /* GitHub icon */
+  color: #24292e; /* GitHub grey */
+  border-bottom: 4px solid #24292e;
+}
+
+ul li:nth-child(6) a::before {
+  content: "\f1b6"; /* Steam icon */
+  color: #346092; /* Dark grey */
+  border-bottom: 4px solid #2f4d94;
+}
+
+ul li:nth-child(5) a::before {
+  content: "\f2ac"; /* Snapchat icon */
+  color: #fffc00; /* Yellow */
+  border-bottom: 4px solid #fffc00;
+}
+
+ul li:nth-child(4) a::before {
+  content: "\f392"; /* Discord icon */
+  color: #7289da; /* Discord blue */
+  border-bottom: 4px solid #7289da;
+}
+ul li:nth-child(3) a::before {
+  content: "\f1bc"; /* Spotify icon */
+  color: #1db954; /* Spotify green */
+  border-bottom: 4px solid #1db954;
+}
+
+ul li:nth-child(2) a::before {
+  content: "\f16d";
+  background-image: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 4px solid #dc2743;
+}
+
+ul li:nth-child(1) a::before {
+  content: "\f099";
+  color: #1da1f2;
+  border-bottom: 4px solid #1da1f2;
+}
+
+ul li:hover a::before {
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
   ul {
-    position: relative;
     display: flex;
+    flex-direction: column;
+    gap: 3em;
   }
-  
-  ul li {
-    position: relative;
-    list-style: none;
-    margin: 0 15px;
-    cursor: pointer;
-  }
-  
-  ul li a {
-    text-decoration: none;
-  }
-  
-  ul li a .fa-brands {
-    font-size: 3em;
-    color: #222;
-  }
-  
-  ul li a::before {
-    font-family: "FontAwesome";
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 3em;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-  }
-  
-  ul li:nth-child(7) a::before {
-    content: "\f09b"; /* GitHub icon */
-    color: #24292e; /* GitHub grey */
-    border-bottom: 4px solid #24292e;
-  }
-  
-  ul li:nth-child(6) a::before {
-    content: "\f1b6"; /* Steam icon */
-    color: #346092; /* Dark grey */
-    border-bottom: 4px solid #2f4d94;
-  }
-  
-  ul li:nth-child(5) a::before {
-    content: "\f2ac"; /* Snapchat icon */
-    color: #fffc00; /* Yellow */
-    border-bottom: 4px solid #fffc00;
-  }
-  
-  ul li:nth-child(4) a::before {
-    content: "\f392"; /* Discord icon */
-    color: #7289da; /* Discord blue */
-    border-bottom: 4px solid #7289da;
-  }
-  ul li:nth-child(3) a::before {
-    content: "\f1bc"; /* Spotify icon */
-    color: #1db954; /* Spotify green */
-    border-bottom: 4px solid #1db954;
-  }
-  
-  ul li:nth-child(2) a::before {
-    content: "\f16d";
-    background-image: linear-gradient(
-      45deg,
-      #f09433 0%,
-      #e6683c 25%,
-      #dc2743 50%,
-      #cc2366 75%,
-      #bc1888 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 4px solid #dc2743;
-  }
-  
-  ul li:nth-child(1) a::before {
-    content: "\f099";
-    color: #1da1f2;
-    border-bottom: 4px solid #1da1f2;
-  }
-  
-  ul li:hover a::before {
-    height: 100%;
-  }
-  
-    
+}
