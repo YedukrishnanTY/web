@@ -87,7 +87,7 @@ ul li:hover a::before {
 @media only screen and (max-width: 600px) {
   ul {
     display: flex;
-    flex-direction: column;
+    flex-wrap : wrap;
     gap: 3em;
   }
 }
